@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+  <head>
+
+    <meta charset='UTF-8'>
+
+    <meta name='viewport' content='width=device-width, inital-scale=1.0'>
+
+    <title>C# Technical Documentation</title>
+
+    <link rel='stylesheet' href='styles.css'>
+
+  </head>
+
+  <body>
+
+    <nav id='navbar'>
+
+      <header>C# Technical Documentation</header>
+
+        <ul>
+          <li>
+          <a class='nav-link' href='#Introduction'>Introduction</a>
+          </li>
+          <li>
+          <a class='nav-link' href='#Why_C#_is_not_C++'>Why C# is not C++</a>
+          </li>
+          <li>
+            <a class='nav-link' href='#C#_Syntax'>C# Syntax</a>
+          </li>
+          <li>
+            <a class='nav-link' href='#Variables'>Variables</a>
+          </li>
+          <li>
+            <a class='nav-link' href='#Method_and_Classes'>Method and Classes</a>
+          </li>
+        </ul>
+    </nav>
+    <main id='main-doc'>
+      <section class='main-section' id='Introduction'>
+      <header>Introduction</header>
+      <p>C# is an object-oriented programming language created by Microsoft that runs on the .NET Framework. The first version was released in year 2002. The latest version of C# 12, was released in November 2023.</p>
+      <p>It is very versitile being used within Mobile applications, Desktop applications, Web applications
+and plenty others. It's one of the most popular programming languages in the world.
+C# is also quick to learn and simple to use and it has huge amount of community support.</p>
+
+      </section>
+
+      <section class='main-section' id='Why_C#_is_not_C++'>
+
+        <header>Why C# is not C++</header>
+
+        <p>C++ is a cross-platform programming language for developing high-performance applications. Bjarne Stroustrup created C++ as an extension to the C programming language. It also gives programmers a lot of power over the system's memory and resources. C++ is one of the most widely used programming languages in the world. Today's operating systems, graphical user interfaces, and embedded systems all contain it.</p>
+
+        <p>It's an object-oriented programming language that offers programs a logical framework, and allows code to be reused, reducing development expenses. C++ is a portable programming language that may be used to create applications that run on a variety of systems.</p>
+
+      </section>
+
+      <section class='main-section' id='C#_Syntax'>
+
+        <header>C# Syntax</header>
+
+        <p><span class='syntax-using'>Using:</span> A using declaration is a variable declaration preceded by the using keyword. It tells the compiler that the variable being declared should be disposed at the end of the enclosing scope.</p>
+
+        <p><code>using: system</code></p>
+
+        <p><span class='syntax-curly-braces'>The curly braces {}</span> marks the beginning and the end of a block of code.</p>
+
+        <p><span>Namespace</span> keyword is used to declare a scope that contains a set of related objects. You can use a namespace to organize code elements and to create globally unique types.</p>
+
+        <code>using system<br>
+
+          namespace Hello World
+
+{ Line of code... }</code>
+
+      </section>
+
+      <section class='main-section' id='Variables'>
+
+        <header>Variables</header>
+
+        <p>One of the most important things to know is Datatypes. Each datatype provides a different purpose and function. <br>There is 5 different datatypes to know:
+
+          <ul id='datatype'>
+
+          <li><span class='datatype-int'>int</span>: stores whole numbers, positive or negative</li>
+
+          <li><span class='datatype-float'>float</span>: numbers with a fractional part, containing one or more decimals.</li>
+
+          <li><span class='datatype-bool'>bool</span>: Boolean values are mostly used for conditional testing and can only hold the value of true or false.</li>
+
+          <li><span class='datatype-charset'>char</span>: used to store a single character. The character must be surrounded by single quotes.</li>
+
+          <li><span>string</span>: used to store a sequence of characters. String values must be surrounded by double quotes.</li>
+
+          </ul>
+
+          </p>
+
+        <p>In order to declare a variable you must specify a type, give it a name of your and then assign it a value. The equal sign is what you would use to assign a value.</p>
+
+        <code class='variable-example'>type variableName = value;</code>
+
+        <p><span>For example: </span><code class='string-example'>string name = "John";</code></p>
+
+      </section>
+
+      <section class='main-section' id='Method_and_Classes'>
+
+        <header>Method and Classes</header>
+
+        <p><span class='method-and-class-method'>Method</span> is a reusable block of code that performs a specific task. They are used to avoid repetition of code, making it more maintainable and readable. They can also improve the structure of a program, and reduce the time and memory it takes to execute. A program calls a method to execute the statements it contains, specifying any required arguments. Methods can receive one or more values as inputs, and can return one or more values when they finish.</p>
+
+        <p><span class='method-and-class-class'>Class</span> is a data structure that may contain data members (constants and fields), function members (methods, properties, events, indexers, operators, instance constructors, finalizers, and static constructors), and nested types. Class types support inheritance, a mechanism whereby a derived class can extend and specialize a base class.</p>
+
+        <code class='class-example'>class Program
+
+  
+
+    static void Main(string[] args)
+
+    {
+
+      Console.WriteLine("Hello World!");    
+
+    }</code>
+
+      </section>
+
+    </main>
+
+  </body>
+
+</html>
+
+
+
