@@ -13,7 +13,7 @@
   <nav class="navbar">
     <ul class='navbar-container sidebar'>
       <li onclick=hideSidebar()>
-        <span class="material-symbols-outlined close">
+        <span class="material-symbols-outlined hide">
           x
         </span>
       </li>
@@ -27,13 +27,13 @@
         <a href="#safari-activities" class="nav-link main-link">Safari Activites</a>
       </li>
       <li class='navbar-item'>
-        <a href="#About Us" class="nav-link main-link">About Us</a>
+        <a href="#about-us" class="nav-link main-link">About Us</a>
       </li>
       <li class='navbar-item'>
-        <a class="log-in nav-link link">Log in</a>
+        <a class="log-in nav-link alt-link hide-link">Log in</a>
       </li>
       <li class='navbar-item'>
-        <a class="sign-up nav-link link">Sign Up</a>
+        <a class="sign-up nav-link alt-link hide-link">Sign Up</a>
       </li>
     </ul>
     <ul class='navbar-container'>
@@ -41,23 +41,23 @@
         <a class="logo nav-link">African Safari</a>
       </li>
       <li class='navbar-item'>
-        <a href="#home" class="nav-link main-link">Home</a>
+        <a href="#home" class="nav-link main-link hide-nav-link">Home</a>
       </li>
       <li class='navbar-item'>
-        <a href="#safari-activities" class="nav-link main-link">Safari Activites</a>
+        <a href="#safari-activities" class="nav-link main-link hide-nav-link">Safari Activites</a>
       </li>
       <li class='navbar-item'>
-        <a href="#About Us" class="nav-link main-link">About Us</a>
+        <a href="#About Us" class="nav-link main-link hide-nav-link">About Us</a>
       </li>
       <li class='navbar-item'>
-        <a class="log-in nav-link link">Log in</a>
+        <a class="log-in nav-link alt-link show-link">Log in</a>
       </li>
       <li class='navbar-item'>
-        <a class="sign-up nav-link link">Sign Up</a>
+        <a class="sign-up nav-link alt-link show-link">Sign Up</a>
       </li>
-      <li onclick=showSidebar()>
+      <li onclick=showSidebar() class='showsidebar'>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
-        <span class="material-symbols-outlined">
+        <span class="material-symbols-outlined show">
           menu
         </span>
       </li>
@@ -127,7 +127,11 @@
       </div>
     </div>
   </div>
-  <div id="about-us">
+  <div >
+    <div>
+      <h1 id="about-us">About Us</h1>
+      <div></div>
+    </div>
   </div>
 </body>
 <script src="index.js"></script>
