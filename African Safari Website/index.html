@@ -10,22 +10,60 @@
 
 <body>
   <div class='main-bg-image'>
-    <nav class="navbar">
-      <div class="logo">African Safari</div>
-      <ul class='navbar-container'>
-        <li class='navbar-item'>
-          <a href="#home" class="nav-link">Home</a>
-        </li>
-        <li class='navbar-item'>
-          <a href="#safari-activities" class="nav-link">Safari Activites</a>
-        </li>
-        <li class='navbar-item'>
-          <a href="#About Us" class="nav-link">About Us</a>
-        </li>
-      </ul>
-      <a class="log-in link">Log in</a>
-      <a class="sign-up link">Sign Up</a>
-    </nav>
+  <nav class="navbar">
+    <ul class='navbar-container sidebar'>
+      <li onclick=hideSidebar()>
+        <span class="material-symbols-outlined close">
+          x
+        </span>
+      </li>
+      <li class='navbar-item'>
+        <a class="logo nav-link">African Safari</a>
+      </li>
+      <li class='navbar-item'>
+        <a href="#home" class="nav-link main-link">Home</a>
+      </li>
+      <li class='navbar-item'>
+        <a href="#safari-activities" class="nav-link main-link">Safari Activites</a>
+      </li>
+      <li class='navbar-item'>
+        <a href="#About Us" class="nav-link main-link">About Us</a>
+      </li>
+      <li class='navbar-item'>
+        <a class="log-in nav-link link">Log in</a>
+      </li>
+      <li class='navbar-item'>
+        <a class="sign-up nav-link link">Sign Up</a>
+      </li>
+    </ul>
+    <ul class='navbar-container'>
+      <li class='navbar-item'>
+        <a class="logo nav-link">African Safari</a>
+      </li>
+      <li class='navbar-item'>
+        <a href="#home" class="nav-link main-link">Home</a>
+      </li>
+      <li class='navbar-item'>
+        <a href="#safari-activities" class="nav-link main-link">Safari Activites</a>
+      </li>
+      <li class='navbar-item'>
+        <a href="#About Us" class="nav-link main-link">About Us</a>
+      </li>
+      <li class='navbar-item'>
+        <a class="log-in nav-link link">Log in</a>
+      </li>
+      <li class='navbar-item'>
+        <a class="sign-up nav-link link">Sign Up</a>
+      </li>
+      <li onclick=showSidebar()>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+        <span class="material-symbols-outlined">
+          menu
+        </span>
+      </li>
+    </ul>
+  </nav>
+  
     <section id="main">
       <div class='main-text'>
         <h1 id="home">Welcome to Africa</h1>
@@ -90,8 +128,7 @@
     </div>
   </div>
   <div id="about-us">
-
   </div>
 </body>
-
+<script src="index.js"></script>
 </html>
