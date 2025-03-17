@@ -1,0 +1,85 @@
+*:before, *:after, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.5;
+    margin: auto;
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: URL('https://techcrunch.com/wp-content/uploads/2015/10/vidya.jpg?w=1024');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .surveyform {
+    border: 3px solid black;
+    border-radius: 10%;
+    padding: 20px;
+    background-color: #9ED9E2;
+  }
+  
+  h1 {
+    text-align: center; 
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+  
+  #description {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #survey-form {
+    padding: 20px;
+    border-radius: 10%;
+    font-weight: bold;
+  }
+  
+  #number, #email, #name {
+    display: block;
+    border: 2px solid black;
+    height: 20px;
+  }
+  
+  select {
+    display: block;
+    cursor: pointer;
+    border: 2px solid black;
+  }
+  
+  #intel, #amd, .checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    letter-spacing: .5px;
+  }
+  
+  #submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #submit {
+    width: 500px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  textarea {
+    width: 400px;
+    height: 50px;
+    border: 2px solid black;
+  }
+  
+  
+  
+  
