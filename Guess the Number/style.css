@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;  /* centers horizontally */
+    align-items: center;      /* centers vertically */
+    height: 100vh;
+}
+
+/*Game layout*/
+.game-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Game title text*/
+.game-title {
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+/*Game rule text*/
+.game-objective {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Users input*/
+.guess-input {
+    width: 63px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/*Input Scroll*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/*Button Element*/
+.submit-btn,
+.reset-btn {
+    width: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 3px;
+    margin: 10px 0;
+    border-radius: 3px;
+    
+}
+
+/*Hint Element*/
+.hint-text,
+.hint-context {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
