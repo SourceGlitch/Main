@@ -78,7 +78,7 @@ body {
     0 0 24px var(--input-color);
   box-shadow: 
     0 0 8px var(--input-color),
-    0 0 16px var(--input-curl(https://discord.com/shop)olor);
+    0 0 16px var(--input-color);
 }
 
 /*Input Scroll*/
