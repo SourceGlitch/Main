@@ -1,47 +1,82 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif; 
+}
+
+:root {
+  --main-text: #00F0FF;
+  --title-text: #D300FF;
+  --board-background: #000435;
+  --input-color: #FF1493;
+  --button-color: #39FF14;
 }
 
 body {
-    display: flex;
-    justify-content: center;  /* centers horizontally */
-    align-items: center;      /* centers vertically */
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /*Game layout*/
-.game-board {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#game-board {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--board-background);
 }
 
 /*Game title text*/
-.game-title {
-    text-transform: uppercase;
-    margin: 10px 0;
+#game-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  color: var(--title-text);
+  text-shadow: 
+    0 0 3px var(--title-text),
+    0 0 8px var(--title-text),
+    0 0 18px var(--title-text),
+    0 0 38px var(--title-text);
 }
 
 /*Game rule text*/
-.game-objective {
-    margin: 10px 0;
-    text-align: center;
+#game-objective {
+  margin: 10px 0;
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--main-text);
+  text-shadow: 
+    0 0 1px var(--main-text),
+    0 0 4px var(--main-text),
+    0 0 10px var(--main-text),
+    0 0 22px var(--main-text);
 }
 
 /* Users input*/
-.guess-input {
-    width: 63px;
-    height: 60px;
-    font-size: 30px;
-    text-align: center;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin: 20px 0;
+#guess-input {
+  width: 63px;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  border: 3px solid var(--input-color);
+  border-radius: 10px;
+  margin: 20px 0;
+  background-color: var(--board-background);
+  color: white;
+  text-shadow: 
+    0 0 8px var(--input-color),
+    0 0 16px var(--input-color),
+    0 0 24px var(--input-color);
+  box-shadow: 
+    0 0 8px var(--input-color),
+    0 0 16px var(--input-color);
 }
 
 /*Input Scroll*/
@@ -51,24 +86,36 @@ input::-webkit-inner-spin-button {
 }
 
 /*Button Element*/
-.submit-btn,
-.reset-btn {
-    width: 50%;
-    font-size: 15px;
-    font-weight: bold;
-    border: 1px solid black;
-    cursor: pointer;
-    padding: 3px;
-    margin: 10px 0;
-    border-radius: 3px;
-    
+#submit-btn,
+#reset-btn,
+#start-btn {
+  width: 20%;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  padding: 3px;
+  margin: 10px 0;
+  border-radius: 3px;
+  background-color: var(--button-color);
+  box-shadow: 
+  0 0 8px var(--button-color),
+  0 0 16px var(--button-color);
+  color: black;
 }
 
-/*Hint Element*/
-.hint-text,
-.hint-context {
-    font-size: 20px;
-    font-weight: bold;
+/*Hint/Attempt/Result Element*/
+#hint-text,
+#hint-context,
+#attempt-counter,
+#result {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: var(--main-text);
+  text-shadow:
+    0 0 3px var(--main-text),
+    0 0 6px var(--main-text),
+    0 0 12px var(--main-text);
 }
-
-

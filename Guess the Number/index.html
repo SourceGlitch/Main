@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the Number</title>
     <link rel="stylesheet" href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="index.js"></script>
-    <div class="game-board">
-        <h1 class="game-title">Guess the Number</h1>
-        <h3 class="game-objective">Pick a Number between 1 to 100</br>You only get 3 tries!!</h3>
-        <input type="number" class="guess-input">
-        <button class="submit-btn">Final Answer</button>
-        <div class="hint-text">Hint:<span class="hint-context"></span></div>
-        <p class="attempt-counter"></p>
-        <button class="reset-btn">Play Again</button>
+    
+    <div id="game-board">
+        <h1 id="game-title">Guess the Number</h1>
+        <h3 id="game-objective">Pick a Number between 1 to 10</br>You only get 3 tries!!</h3>
+        <input type="number" id="guess-input">
+  <button id="start-btn" onclick="clickStart()">Start</button>
+        <button id="submit-btn" onclick="clickSubmit()">Final Answer</button>
+        <div id="hint-text" >Hint:<span id="hint-context"></span></div>
+  <div id="result"></div>
+        <p id="attempt-counter"></p>
+        <button id="reset-btn" onclick="clickReset()">Play Again</button>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
