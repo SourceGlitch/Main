@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto Condensed, sans-serif;
+}
+
+:root {
+  --body-background: linear-gradient(135deg, #667eea, #764ba2);
+  --background-list: white; 
+  --button-color: linear-gradient(to right, #43e97b, #38f9d7);
+}
+
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--body-background);
+  padding: 2rem;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 90%;
+  height: auto;
+  max-width: 400px;
+  padding: 0 0 5px 0;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background: var(--background-list);
+}
+
+.header {
+  margin: 0.5rem 0 0 0;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#list-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 5px 0;
+  margin-left: 10px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: #43e97b;
+  width: 18px;
+  height: 18px;
+}
+
+#task-app {
+  gap: 2px;
+}
+
+#task-entry {
+  width: 10rem;
+  height: 20px;
+  background-color: #EBEBEB;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  padding-left: 5px;
+}
+
+button {
+  text-align: center;
+  width: 3rem;
+  height: 20px;
+  color: white;
+  background-image: var(--button-color);
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
